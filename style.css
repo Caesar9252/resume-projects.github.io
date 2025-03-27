@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background: linear-gradient(45  deg, #242424, #000000);
+    background-size: 400% 400%;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  body {
+      text-align: center;
+      /*color: rgb(255, 251, 0, 0.712);*/
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 1500;
+  }
+  
+  .mrgn {
+      margin-top: 50px;
+  }
+  
+  img {
+      border-radius: 100px;
+      margin-top: 40px;
+      /*box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.575)*/
+  }
+  
+  @keyframes glow {
+      0% { box-shadow: 0 0 3px #ffffff; }
+      50% { box-shadow: 0 0 6px #ffffff; }
+      100% { box-shadow: 0 0 3px #ffffff; }
+  }
+  
+  
+  
+  .resume-card {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 25px;
+      background: linear-gradient(135deg, #111111 0%, #000000 100%);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.575);
+      border: 1px solid rgba(0, 0, 0, 0.555);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 1.6;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .resume-card::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: linear-gradient(45deg, #111111, #000000);
+      z-index: -1;
+      border-radius: 20px;
+      opacity: 0.7;
+    }
+    
+    .highlight-name {
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 4px rgb(255, 255, 255); 
+      font-size: 2.6em;
+      margin-bottom: 20px;
+    }
+    
+    .resume-card p {
+      color: whitesmoke;
+      font-size: 1.1em;
+    }
+    
+    .resume-card strong {
+      color: #3b2fe98e;
+      font-weight: bold;
+    }
+  
+    .resume-card {
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    @media (max-width: 768px) {
+      .resume-card {
+        padding: 15px;
+        margin: 10px;
+      }
+    }
+  
+  .resume-card h1 {
+    color:rgb(255, 255, 255);
+    font-family: 'Segoe UI', monospace;
+    font-weight: 500;
+  }
+  
+  .top {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  
+  .bottom {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
